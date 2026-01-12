@@ -56,10 +56,10 @@ void Time::setHours(int hours)
 //    this->hours = hours;
 //}
 
-int Time::getHours()
-{
-    return m_hours;
-}
+//int Time::getHours()
+//{
+//    return m_hours;
+//}
 
 void Time::setMinutes(int minutes)
 {
@@ -72,10 +72,10 @@ void Time::setMinutes(int minutes)
     }
 }
 
-int Time::getMinutes()
-{
-    return m_minutes;
-}
+//int Time::getMinutes()
+//{
+//    return m_minutes;
+//}
 
 
 void Time::setSeconds(int seconds)
@@ -89,11 +89,11 @@ void Time::setSeconds(int seconds)
     }
 }
 
-
-int Time::getSeconds()
-{
-    return m_seconds;
-}
+//
+//int Time::getSeconds()
+//{
+//    return m_seconds;
+//}
 
 
 

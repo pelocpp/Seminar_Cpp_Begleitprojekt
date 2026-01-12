@@ -1,5 +1,7 @@
 #pragma once
 
+#include <string>
+
 class Time
 {
 private:
@@ -22,11 +24,12 @@ public:
 
     // getter / setter
     void setHours(int hours);
-    int getHours();
     void setMinutes(int minutes);
-    int getMinutes();
     void setSeconds(int seconds);
-    int getSeconds();
+
+    int getHours() { return m_hours; }
+    int getMinutes() { return m_minutes; }
+    int getSeconds() { return m_seconds; }
 
     // public interface
     void reset();

@@ -125,6 +125,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="HelloWorld.cpp" />
+    <ClCompile Include="ParameterPassing.cpp" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="Time.cpp" />
   </ItemGroup>

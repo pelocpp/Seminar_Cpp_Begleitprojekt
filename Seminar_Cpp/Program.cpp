@@ -1,5 +1,9 @@
 #include "Time.h"
 
+#include <print>
+
+extern void main_parameter_passing();
+
 // Vergleich
 
 #if 0
@@ -47,7 +51,7 @@ int main_on_the_heap()
 
 // =============================================
 
-int main()
+int main_getting_started()
 {
     // Stack
     Time now (10, 54, 0);     // first object // located on the stack
@@ -67,4 +71,34 @@ int main()
     now.print();
 
     return 0;
+}
+
+// =============================================
+
+// free function // not a method
+
+void workingOnATimeObject(Time t)
+{
+    int hours = t.getHours();
+    std::println("Hours: {}", hours);
+
+    t.setHours(hours + 1);
+    t.print();
+}
+
+int main_demo()
+{
+    // Stack
+    Time now(14, 30, 0);
+    now.print();
+
+    workingOnATimeObject(now);
+    now.print();  // <===============
+
+    return 0;
+}
+
+void main()
+{
+    main_parameter_passing();
 }
