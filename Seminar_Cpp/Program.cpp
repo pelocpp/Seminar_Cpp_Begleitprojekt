@@ -98,7 +98,8 @@ int main_demo()
     return 0;
 }
 
-void main()
+int main()
 {
     main_parameter_passing();
+    return 0;
 }

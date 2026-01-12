@@ -127,3 +127,43 @@ void Time::print()
 {
     std::println("{:02}:{:02}:{:02}", m_hours, m_minutes, m_seconds);
 }
+
+bool Time::equals(const Time& other) const  // eine Referenz ist ein Stellvertreter für ein Original
+{                                // 'other' soll geschützt werden !!!
+    // Test:
+    //other.m_hours++;
+    //m_hours++;
+
+    if (m_hours != other.m_hours) {
+        return false;
+    }
+    else if (m_minutes != other.m_minutes) {
+        return false;
+    }
+    else if (m_seconds != other.m_seconds) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+bool Time::equalsAlternate(const Time& other) const  // eine Referenz ist ein Stellvertreter für ein Original
+{                                               // 'other' soll geschützt werden !!!
+    // Test:
+    //other.m_hours++;
+    //m_hours++;
+
+    if (m_hours != other.getHours()) {
+        return false;
+    }
+    else if (m_minutes != other.getMinutes()) {
+        return false;
+    }
+    else if (m_seconds != other.getSeconds()) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}

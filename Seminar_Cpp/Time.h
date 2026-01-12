@@ -27,12 +27,16 @@ public:
     void setMinutes(int minutes);
     void setSeconds(int seconds);
 
-    int getHours() { return m_hours; }
-    int getMinutes() { return m_minutes; }
-    int getSeconds() { return m_seconds; }
+    int getHours() const { return m_hours; }
+    int getMinutes() const { return m_minutes; }
+    int getSeconds() const { return m_seconds; }
 
     // public interface
     void reset();
     void increment();
     void print();
+
+    // comparison
+    bool equals (const Time& other) const;
+    bool equalsAlternate(const Time& other) const;
 };
