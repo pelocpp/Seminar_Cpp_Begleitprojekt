@@ -51,19 +51,20 @@ int main()
 {
     // Stack
     Time now (10, 54, 0);     // first object // located on the stack
-    //now.m_hours = 10;
-    //now.m_minutes = 54;
-    //now.m_seconds = 0;
     now.print();
 
     Time pause (12, 30, 0);   // second object // located on the stack
-    //pause.m_hours = 12;
-    //pause.m_minutes = 30;
-    //pause.m_seconds = 0;
     pause.print();
 
     Time empty;
     empty.print();
+
+    //now.m_hours = 13;
+    //now.m_minutes = 31;
+
+    now.setHours(9999);
+    int currentHours = now.getHours();
+    now.print();
 
     return 0;
 }
