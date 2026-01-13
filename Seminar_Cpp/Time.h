@@ -4,6 +4,10 @@
 
 class Time
 {
+    // friendship
+    friend bool operator == (const Time& left, const Time& right);
+    friend bool operator != (const Time& left, const Time& right);
+
 private:
     // member data / instance variables
     int m_hours;
@@ -39,4 +43,15 @@ public:
     // comparison
     bool equals (const Time& other) const;
     bool equalsAlternate(const Time& other) const;
+
+    // operators
+
+    //bool operator == (const Time& other);
+
+    //bool operator != (const Time& other);
+
 };
+
+// global function
+//extern bool operator == (const Time& left, const Time& right);
+//extern bool operator != (const Time& left, const Time& right);

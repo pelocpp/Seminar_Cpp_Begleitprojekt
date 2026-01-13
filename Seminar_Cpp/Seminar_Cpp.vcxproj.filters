@@ -27,6 +27,12 @@
     <ClCompile Include="ParameterPassing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Time_Examples.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynamic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Time.h">

@@ -124,10 +124,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Dynamic.cpp" />
     <ClCompile Include="HelloWorld.cpp" />
     <ClCompile Include="ParameterPassing.cpp" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="Time.cpp" />
+    <ClCompile Include="Time_Examples.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Time.h" />

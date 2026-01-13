@@ -167,3 +167,67 @@ bool Time::equalsAlternate(const Time& other) const  // eine Referenz ist ein St
         return true;
     }
 }
+
+// ===========================================
+
+
+
+//
+//bool Time::operator == (const Time& other)
+//{
+//    if (m_hours != other.m_hours) {
+//        return false;
+//    }
+//    else if (m_minutes != other.m_minutes) {
+//        return false;
+//    }
+//    else if (m_seconds != other.m_seconds) {
+//        return false;
+//    }
+//    else {
+//        return true;
+//    }
+//}
+//
+//bool Time::operator != (const Time& other)
+//{
+//    return  ! (*this == other);
+//}
+
+bool operator == (const Time& left, const Time& right)
+{
+    if (left.m_hours != right.m_hours) {
+        return false;
+    }
+    else if (left.m_minutes != right.m_minutes) {
+        return false;
+    }
+    else if (left.m_seconds != right.m_seconds) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+
+//bool operator == (const Time& left, const Time& right)
+//{
+//    if (left.getHours() != right.getHours()) {
+//        return false;
+//    }
+//    else if (left.getMinutes() != right.getMinutes()) {
+//        return false;
+//    }
+//    else if (left.getSeconds() != right.getSeconds()) {
+//        return false;
+//    }
+//    else {
+//        return true;
+//    }
+//}
+
+bool operator != (const Time& left, const Time& right)
+{
+    return ! (left == right);
+}
