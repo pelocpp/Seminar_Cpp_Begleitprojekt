@@ -121,6 +121,23 @@ void main_test_operators()
     b = operator== (now, than);  // Method-Style
 }
 
+void main_test_frage()
+{
+    Time t(12, 0, 0);
+
+    Time t2;
+
+    t2 = t;   // Geht das in C++
+
+    // Noch eine Frage
+
+    Time t3(t); // Geht das in C++: Ja, Kopier-Konstruktor
+
+    // STOLPERFALLE: Arghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+    Time t4 = t;                   // Kopier-Konstruktor: 2. Schreibweise
+}
+
+
 void main_test_global_data()
 {
     g_mittagsPause.print();
