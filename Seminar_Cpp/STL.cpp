@@ -112,6 +112,27 @@ static void test_stl_04()
     }
 }
 
+
+static void test_stl_04_A()
+{
+    std::vector<int> numbers;
+
+    numbers.push_back(10);
+    numbers.push_back(11);
+    numbers.push_back(12);
+
+    auto pos = numbers.begin();
+    auto end = numbers.end();
+
+    while (pos != end) {
+
+        std::println(" ==> {}", *pos);
+        pos++;
+    }
+}
+
+
+
 static void print(int value)
 {
     std::println(" ==> {}", value);
